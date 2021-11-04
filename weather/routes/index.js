@@ -12,7 +12,7 @@ router.get('/', function(req, res) {
 
 router.post('/get_weather', async function (req,res) {
   let city = req.body.city;
-  let url = 'http://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=b6e49f40c28d2f220f3199ce22a71aa6'
+  let url = 'http://api.openweathermap.org/data/2.5/weather?q=New%20York&units=${UNITS}&appid=b6e49f40c28d2f220f3199ce22a71aa6'
   
   /*`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${UNITS}&appid=${OWM_API_KEY}`;*/
 
